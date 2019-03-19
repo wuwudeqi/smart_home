@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fjs.backoffice.mapper.DeviceMapper">
+
+
+<insert id="insertRecord" parameterType="record">
+    INSERT INTO record (device_id,record_time,temperature ,humidity) VALUES (#{device_id},#{record_time},#{temperature},#{humidity})
+</insert>
+
+</mapper>
